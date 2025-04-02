@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 export default async function Page() {
 
   return (
@@ -7,9 +9,8 @@ export default async function Page() {
       <p className="mt-2 text-gray-600">
         The page youre looking for doesnt exist.
       </p>
-      <a href="/" className="mt-6 px-4 py-2 bg-amber-700 text-white rounded hover:bg-amber-700 transition">
-        Go back home
-      </a>
+      <Link href="/" className="mt-6 px-4 py-2 bg-amber-700 text-white rounded hover:bg-amber-700 transition">
+        Go back home </Link>
     </div>
   );
 }
